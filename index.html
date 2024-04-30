@@ -34,9 +34,26 @@
                 <button class="bg-cyan py-3 px-8 text-white rounded-full hover:opacity-70">Sign Up</button>
             </div>
 
-            <!-- Hamburger Menu -->
+            <!-- Hamburger Menu Button -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50" class="lg:hidden cursor-pointer menu-icons" onclick="switch_view()">
+                <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50" class="lg:hidden cursor-pointer hidden menu-icons" onclick="switch_view()">
+                <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
+            </svg>
+
         </div>
+        
         <!-- Mobile Menu -->
+        <div id="menu" class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100 lg:hidden">
+            <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+                <a href="#" class="w-full text-center">Features</a>
+                <a href="#" class="w-full text-center">Pricing</a>
+                <a href="#" class="w-full text-center">Resources</a>
+                <a href="#" class="w-full text-center pt-6 border-t border-gray-400">Login</a>
+                <a href="#" class="w-full text-center py-3 rounded-full bg-cyan hover:bg-cyanLight">Sign Up</a>
+            </div>
+        </div>
     </nav>
 
 
@@ -229,9 +246,9 @@
     <footer class="py-16 bg-veryDarkViolet">
         <div class="container flex flex-col items-center justify-between mx-auto space-y-14 md:flex-row md:space-y-0 md:items-start">
             <!-- Logo -->
-            <h1 class="text-2xl font-bold tracking-widest text-gray-500">Shortly</h1>
+            <h1 class="text-3xl font-bold tracking-widest text-gray-500 hover:text-cyan">Shortly</h1>
             <!-- Menus container -->
-            <div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
+            <div class="flex flex-col space-y-16 md:space-x-16 md:flex-row md:space-y-0">
                 <!-- Menu 1 -->
                 <div class="flex flex-col items-center w-full md:items-start">
                     <div class="mb-5 font-bold text-white capitalize">Features</div>

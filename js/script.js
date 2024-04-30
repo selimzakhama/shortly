@@ -43,3 +43,14 @@ function validURL(url){
     var urlPattern = /^(ftp|http|https):\/\/[^ "]+$/;
     return urlPattern.test(url);
 }
+
+
+function switch_view(){
+    let menu_icons = document.querySelectorAll('.menu-icons')
+    menu_icons.forEach(function(icon) {
+        // Appliquer la classe 'hidden' à chaque élément individuel
+        icon.classList.toggle('hidden');
+    });
+    let menu = document.getElementById('menu')
+    menu.classList.toggle('hidden')
+}
